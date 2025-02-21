@@ -1,0 +1,35 @@
+{
+    "base_de_datos": {
+      "nombre": "Villanos",
+      "tablas": {
+        "Marvel": {
+          "nombre": "Villanos de Marvel",
+          "marca": "Marvel",
+          "propósito": "Guardado de información de villanos de Marvel para su uso en API",
+          "columnas": [
+            "Nombre",
+            "Nemesis",
+            "Fecha de Creación",
+            "Poderes",
+            "Apariencia",
+            "Identidad Secreta",
+            "Origen"
+          ],
+          "datos": []
+        },
+        "DC": {
+          "nombre": "Villanos de DC",
+          "columnas": [
+            "Nombre",
+            "Nemesis",
+            "Fecha de Creación",
+            "Poderes",
+            "Apariencia",
+            "Identidad Secreta",
+            "Origen"
+          ],
+          "datos": []
+        }
+      }
+    }
+  }
