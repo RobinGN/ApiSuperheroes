@@ -5,17 +5,81 @@
         "Marvel": {
           "nombre": "Villanos de Marvel",
           "marca": "Marvel",
-          "propósito": "Guardado de información de villanos de Marvel para su uso en API",
+          "propósito": "Guardado de información de villanos de Marvel para su uso en API",
           "columnas": [
             "Nombre",
             "Nemesis",
-            "Fecha de Creación",
+            "Fecha de Creación",
             "Poderes",
             "Apariencia",
             "Identidad Secreta",
             "Origen"
           ],
-          "datos": []
+          "datos": [
+            {
+              "Nombre": "Thanos",
+              "Nemesis": "Los Vengadores",
+              "Fecha de Creación": "1973",
+              "Poderes": "Fuerza sobrehumana, inteligencia superior, inmortalidad",
+              "Apariencia": "Piel morada, armadura dorada",
+              "Identidad Secreta": "No tiene",
+              "Origen": "Titán"
+            },
+            {
+              "Nombre": "Doctor Doom",
+              "Nemesis": "Los Cuatro Fantásticos",
+              "Fecha de Creación": "1962",
+              "Poderes": "Genio científico, armadura avanzada, magia",
+              "Apariencia": "Armadura metálica, capa verde",
+              "Identidad Secreta": "Victor Von Doom",
+              "Origen": "Latveria"
+            },
+            {
+              "Nombre": "Loki",
+              "Nemesis": "Thor",
+              "Fecha de Creación": "1962",
+              "Poderes": "Magia, cambio de forma, inteligencia sobrehumana",
+              "Apariencia": "Capa verde, casco con cuernos",
+              "Identidad Secreta": "Loki Laufeyson",
+              "Origen": "Jotunheim"
+            },
+            {
+              "Nombre": "Green Goblin",
+              "Nemesis": "Spider-Man",
+              "Fecha de Creación": "1964",
+              "Poderes": "Fuerza sobrehumana, inteligencia, equipo avanzado",
+              "Apariencia": "Traje verde y morado, planeador",
+              "Identidad Secreta": "Norman Osborn",
+              "Origen": "Humano modificado"
+            },
+            {
+              "Nombre": "Red Skull",
+              "Nemesis": "Capitán América",
+              "Fecha de Creación": "1941",
+              "Poderes": "Intelecto estratégico, fuerza mejorada",
+              "Apariencia": "Cráneo rojo, uniforme nazi/hidra",
+              "Identidad Secreta": "Johann Schmidt",
+              "Origen": "Humano modificado"
+            },
+            {
+              "Nombre": "Venom",
+              "Nemesis": "Spider-Man",
+              "Fecha de Creación": "1984",
+              "Poderes": "Fuerza sobrehumana, regeneración, simbiote alienígena",
+              "Apariencia": "Cuerpo negro con detalles blancos, aspecto monstruoso",
+              "Identidad Secreta": "Eddie Brock",
+              "Origen": "Simbiote alienígena"
+            },
+            {
+              "Nombre": "Ultron",
+              "Nemesis": "Los Vengadores",
+              "Fecha de Creación": "1968",
+              "Poderes": "Inteligencia artificial, fuerza extrema, autoregeneración",
+              "Apariencia": "Cuerpo metálico futurista",
+              "Identidad Secreta": "No tiene",
+              "Origen": "Creación de Hank Pym"
+            }
+          ]
         },
         "DC": {
           "nombre": "Villanos de DC",
