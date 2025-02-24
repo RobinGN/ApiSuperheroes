@@ -6,6 +6,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(cors());
+app.use(express.json());
 
 const cargarDatos = () => {
   const rawData = fs.readFileSync("villanos_db.json"); 
@@ -59,6 +60,31 @@ app.get("/api/villanos/dc", (req, res) => {
       res.status(404).json({ error: "Villano no encontrado" });
     }
   });
+
+
+// Agregar un Villano a la tabla de Marvel
+app.post("/api/villanos/marvel", (req, res) => {
+  const nuevoVillano = req.body; 
+  const data = cargarDatos();
+  
+  data.base_de_datos.tablas.Marvel.datos.push(nuevoVillano);
+  
+  fs.writeFileSync("villanos_db.json", JSON.stringify(data, null, 2));
+  
+  res.status(201).json({ message: "Villano agregado a Marvel", villano: nuevoVillano });
+});
+
+// Agregar un Villano a la tabla de DC
+app.post("/api/villanos/dc", (req, res) => {
+  const nuevoVillano = req.body; 
+  const data = cargarDatos();
+  
+  data.base_de_datos.tablas.DC.datos.push(nuevoVillano);
+  
+  fs.writeFileSync("villanos_db.json", JSON.stringify(data, null, 2));
+  
+  res.status(201).json({ message: "Villano agregado a DC", villano: nuevoVillano });
+});
 
 
   // Eliminar a un villano de Marvel por nombre
