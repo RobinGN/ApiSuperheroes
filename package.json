@@ -16,5 +16,8 @@
     "url": "https://github.com/RobinGN/ApiSuperheroes/issues"
   },
   "homepage": "https://github.com/RobinGN/ApiSuperheroes#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
 }
