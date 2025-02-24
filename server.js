@@ -60,6 +60,41 @@ app.get("/api/villanos/dc", (req, res) => {
     }
   });
 
+
+  // Eliminar a un villano de Marvel por nombre
+app.delete("/api/villanos/marvel/:nombre", (req, res) => {
+  const data = cargarDatos();
+  const nombre = req.params.nombre;
+  const index = data.base_de_datos.tablas.Marvel.datos.findIndex(
+    (villano) => villano.Nombre.toLowerCase() === nombre.toLowerCase()
+  );
+
+  if (index === -1) {
+    return res.status(404).json({ error: "Villano no encontrado" });
+  }
+
+  data.base_de_datos.tablas.Marvel.datos.splice(index, 1);
+  fs.writeFileSync("villanos_db.json", JSON.stringify(data, null, 2));
+  res.json({ message: `Villano ${nombre} eliminado con éxito` });
+});
+
+// Eliminar a un villano de DC por nombre
+app.delete("/api/villanos/dc/:nombre", (req, res) => {
+  const data = cargarDatos();
+  const nombre = req.params.nombre;
+  const index = data.base_de_datos.tablas.DC.datos.findIndex(
+    (villano) => villano.Nombre.toLowerCase() === nombre.toLowerCase()
+  );
+
+  if (index === -1) {
+    return res.status(404).json({ error: "Villano no encontrado" });
+  }
+
+  data.base_de_datos.tablas.DC.datos.splice(index, 1);
+  fs.writeFileSync("villanos_db.json", JSON.stringify(data, null, 2));
+  res.json({ message: `Villano ${nombre} eliminado con éxito` });
+});
+
 app.listen(PORT, () => {
   console.log(` Servidor corriendo en http://localhost:${PORT}`);
 });

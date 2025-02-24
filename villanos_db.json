@@ -1,156 +1,156 @@
 {
-    "base_de_datos": {
-      "nombre": "Villanos",
-      "tablas": {
-        "Marvel": {
-          "nombre": "Villanos de Marvel",
-          "marca": "Marvel",
-          "propósito": "Guardado de información de villanos de Marvel para su uso en API",
-          "columnas": [
-            "Nombre",
-            "Nemesis",
-            "Fecha de Creación",
-            "Poderes",
-            "Apariencia",
-            "Identidad Secreta",
-            "Origen"
-          ],
-          "datos": [
-            {
-              "Nombre": "Thanos",
-              "Nemesis": "Los Vengadores",
-              "Fecha de Creación": "1973",
-              "Poderes": "Fuerza sobrehumana, inteligencia superior, inmortalidad",
-              "Apariencia": "Piel morada, armadura dorada",
-              "Identidad Secreta": "No tiene",
-              "Origen": "Titán"
-            },
-            {
-              "Nombre": "Doctor Doom",
-              "Nemesis": "Los Cuatro Fantásticos",
-              "Fecha de Creación": "1962",
-              "Poderes": "Genio científico, armadura avanzada, magia",
-              "Apariencia": "Armadura metálica, capa verde",
-              "Identidad Secreta": "Victor Von Doom",
-              "Origen": "Latveria"
-            },
-            {
-              "Nombre": "Loki",
-              "Nemesis": "Thor",
-              "Fecha de Creación": "1962",
-              "Poderes": "Magia, cambio de forma, inteligencia sobrehumana",
-              "Apariencia": "Capa verde, casco con cuernos",
-              "Identidad Secreta": "Loki Laufeyson",
-              "Origen": "Jotunheim"
-            },
-            {
-              "Nombre": "Green Goblin",
-              "Nemesis": "Spider-Man",
-              "Fecha de Creación": "1964",
-              "Poderes": "Fuerza sobrehumana, inteligencia, equipo avanzado",
-              "Apariencia": "Traje verde y morado, planeador",
-              "Identidad Secreta": "Norman Osborn",
-              "Origen": "Humano modificado"
-            },
-            {
-              "Nombre": "Red Skull",
-              "Nemesis": "Capitán América",
-              "Fecha de Creación": "1941",
-              "Poderes": "Intelecto estratégico, fuerza mejorada",
-              "Apariencia": "Cráneo rojo, uniforme nazi/hidra",
-              "Identidad Secreta": "Johann Schmidt",
-              "Origen": "Humano modificado"
-            },
-            {
-              "Nombre": "Venom",
-              "Nemesis": "Spider-Man",
-              "Fecha de Creación": "1984",
-              "Poderes": "Fuerza sobrehumana, regeneración, simbiote alienígena",
-              "Apariencia": "Cuerpo negro con detalles blancos, aspecto monstruoso",
-              "Identidad Secreta": "Eddie Brock",
-              "Origen": "Simbiote alienígena"
-            },
-            {
-              "Nombre": "Ultron",
-              "Nemesis": "Los Vengadores",
-              "Fecha de Creación": "1968",
-              "Poderes": "Inteligencia artificial, fuerza extrema, autoregeneración",
-              "Apariencia": "Cuerpo metálico futurista",
-              "Identidad Secreta": "No tiene",
-              "Origen": "Creación de Hank Pym"
-            }
-          ]
-        },
-        "DC": {
-            "nombre": "Villanos de DC",
-            "marca": "DC Comics",
-            "propósito": "Guardado de información de villanos de DC para su uso en API",
-            "columnas": [
-              "Nombre",
-              "Nemesis",
-              "Fecha de Creación",
-              "Poderes",
-              "Apariencia",
-              "Identidad Secreta",
-              "Origen"
-            ],
-            "datos": [
-              {
-                "Nombre": "Joker",
-                "Nemesis": "Batman",
-                "Fecha_de_Creacion": "1940",
-                "Poderes": "Genio criminal, manipulación, impredecible",
-                "Apariencia": "Piel blanca, cabello verde, traje púrpura",
-                "Identidad_Secreta": "Desconocida",
-                "Origen": "Gotham City"
-              },
-              {
-                "Nombre": "Lex Luthor",
-                "Nemesis": "Superman",
-                "Fecha_de_Creacion": "1940",
-                "Poderes": "Intelecto nivel genio, riqueza, tecnología avanzada",
-                "Apariencia": "Hombre calvo con traje formal",
-                "Identidad_Secreta": "Lex Luthor",
-                "Origen": "Metrópolis"
-              },
-              {
-                "Nombre": "Darkseid",
-                "Nemesis": "Liga de la Justicia",
-                "Fecha_de_Creacion": "1970",
-                "Poderes": "Fuerza divina, inmortalidad, Rayo Omega",
-                "Apariencia": "Piel gris, armadura oscura",
-                "Identidad_Secreta": "Uxas",
-                "Origen": "Apokolips"
-              },
-              {
-                "Nombre": "Deathstroke",
-                "Nemesis": "Teen Titans, Batman",
-                "Fecha_de_Creacion": "1980",
-                "Poderes": "Habilidades mejoradas, estratega militar",
-                "Apariencia": "Armadura negra y naranja, máscara",
-                "Identidad_Secreta": "Slade Wilson",
-                "Origen": "Humano modificado"
-              },
-              {
-                "Nombre": "Black Adam",
-                "Nemesis": "Shazam",
-                "Fecha_de_Creacion": "1945",
-                "Poderes": "Fuerza divina, velocidad, vuelo, rayos mágicos",
-                "Apariencia": "Traje negro con emblema amarillo",
-                "Identidad_Secreta": "Teth-Adam",
-                "Origen": "Egipto Antiguo"
-              },
-              {
-                "Nombre": "Reverse Flash",
-                "Nemesis": "Flash",
-                "Fecha_de_Creacion": "1963",
-                "Poderes": "Velocidad sobrehumana, manipulación temporal",
-                "Apariencia": "Traje amarillo con detalles rojos",
-                "Identidad_Secreta": "Eobard Thawne",
-                "Origen": "Siglo XXV"
-              }
-            ]
+  "base_de_datos": {
+    "nombre": "Villanos",
+    "tablas": {
+      "Marvel": {
+        "nombre": "Villanos de Marvel",
+        "marca": "Marvel",
+        "propósito": "Guardado de información de villanos de Marvel para su uso en API",
+        "columnas": [
+          "Nombre",
+          "Nemesis",
+          "Fecha de Creación",
+          "Poderes",
+          "Apariencia",
+          "Identidad Secreta",
+          "Origen"
+        ],
+        "datos": [
+          {
+            "Nombre": "Thanos",
+            "Nemesis": "Los Vengadores",
+            "Fecha de Creación": "1973",
+            "Poderes": "Fuerza sobrehumana, inteligencia superior, inmortalidad",
+            "Apariencia": "Piel morada, armadura dorada",
+            "Identidad Secreta": "No tiene",
+            "Origen": "Titán"
+          },
+          {
+            "Nombre": "Doctor Doom",
+            "Nemesis": "Los Cuatro Fantásticos",
+            "Fecha de Creación": "1962",
+            "Poderes": "Genio científico, armadura avanzada, magia",
+            "Apariencia": "Armadura metálica, capa verde",
+            "Identidad Secreta": "Victor Von Doom",
+            "Origen": "Latveria"
+          },
+          {
+            "Nombre": "Loki",
+            "Nemesis": "Thor",
+            "Fecha de Creación": "1962",
+            "Poderes": "Magia, cambio de forma, inteligencia sobrehumana",
+            "Apariencia": "Capa verde, casco con cuernos",
+            "Identidad Secreta": "Loki Laufeyson",
+            "Origen": "Jotunheim"
+          },
+          {
+            "Nombre": "Green Goblin",
+            "Nemesis": "Spider-Man",
+            "Fecha de Creación": "1964",
+            "Poderes": "Fuerza sobrehumana, inteligencia, equipo avanzado",
+            "Apariencia": "Traje verde y morado, planeador",
+            "Identidad Secreta": "Norman Osborn",
+            "Origen": "Humano modificado"
+          },
+          {
+            "Nombre": "Red Skull",
+            "Nemesis": "Capitán América",
+            "Fecha de Creación": "1941",
+            "Poderes": "Intelecto estratégico, fuerza mejorada",
+            "Apariencia": "Cráneo rojo, uniforme nazi/hidra",
+            "Identidad Secreta": "Johann Schmidt",
+            "Origen": "Humano modificado"
+          },
+          {
+            "Nombre": "Venom",
+            "Nemesis": "Spider-Man",
+            "Fecha de Creación": "1984",
+            "Poderes": "Fuerza sobrehumana, regeneración, simbiote alienígena",
+            "Apariencia": "Cuerpo negro con detalles blancos, aspecto monstruoso",
+            "Identidad Secreta": "Eddie Brock",
+            "Origen": "Simbiote alienígena"
+          },
+          {
+            "Nombre": "Ultron",
+            "Nemesis": "Los Vengadores",
+            "Fecha de Creación": "1968",
+            "Poderes": "Inteligencia artificial, fuerza extrema, autoregeneración",
+            "Apariencia": "Cuerpo metálico futurista",
+            "Identidad Secreta": "No tiene",
+            "Origen": "Creación de Hank Pym"
           }
-        }
+        ]
+      },
+      "DC": {
+        "nombre": "Villanos de DC",
+        "marca": "DC Comics",
+        "propósito": "Guardado de información de villanos de DC para su uso en API",
+        "columnas": [
+          "Nombre",
+          "Nemesis",
+          "Fecha de Creación",
+          "Poderes",
+          "Apariencia",
+          "Identidad Secreta",
+          "Origen"
+        ],
+        "datos": [
+          {
+            "Nombre": "Joker",
+            "Nemesis": "Batman",
+            "Fecha_de_Creacion": "1940",
+            "Poderes": "Genio criminal, manipulación, impredecible",
+            "Apariencia": "Piel blanca, cabello verde, traje púrpura",
+            "Identidad_Secreta": "Desconocida",
+            "Origen": "Gotham City"
+          },
+          {
+            "Nombre": "Lex Luthor",
+            "Nemesis": "Superman",
+            "Fecha_de_Creacion": "1940",
+            "Poderes": "Intelecto nivel genio, riqueza, tecnología avanzada",
+            "Apariencia": "Hombre calvo con traje formal",
+            "Identidad_Secreta": "Lex Luthor",
+            "Origen": "Metrópolis"
+          },
+          {
+            "Nombre": "Darkseid",
+            "Nemesis": "Liga de la Justicia",
+            "Fecha_de_Creacion": "1970",
+            "Poderes": "Fuerza divina, inmortalidad, Rayo Omega",
+            "Apariencia": "Piel gris, armadura oscura",
+            "Identidad_Secreta": "Uxas",
+            "Origen": "Apokolips"
+          },
+          {
+            "Nombre": "Deathstroke",
+            "Nemesis": "Teen Titans, Batman",
+            "Fecha_de_Creacion": "1980",
+            "Poderes": "Habilidades mejoradas, estratega militar",
+            "Apariencia": "Armadura negra y naranja, máscara",
+            "Identidad_Secreta": "Slade Wilson",
+            "Origen": "Humano modificado"
+          },
+          {
+            "Nombre": "Black Adam",
+            "Nemesis": "Shazam",
+            "Fecha_de_Creacion": "1945",
+            "Poderes": "Fuerza divina, velocidad, vuelo, rayos mágicos",
+            "Apariencia": "Traje negro con emblema amarillo",
+            "Identidad_Secreta": "Teth-Adam",
+            "Origen": "Egipto Antiguo"
+          },
+          {
+            "Nombre": "Reverse Flash",
+            "Nemesis": "Flash",
+            "Fecha_de_Creacion": "1963",
+            "Poderes": "Velocidad sobrehumana, manipulación temporal",
+            "Apariencia": "Traje amarillo con detalles rojos",
+            "Identidad_Secreta": "Eobard Thawne",
+            "Origen": "Siglo XXV"
+          }
+        ]
       }
     }
+  }
+}
