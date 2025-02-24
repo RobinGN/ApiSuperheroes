@@ -86,6 +86,55 @@ app.post("/api/villanos/dc", (req, res) => {
   res.status(201).json({ message: "Villano agregado a DC", villano: nuevoVillano });
 });
 
+// Actualizar un Villano de Marvel
+app.put("/api/villanos/marvel/:nombre", (req, res) => {
+  const data = cargarDatos();
+  const nombre = req.params.nombre;
+  const index = data.base_de_datos.tablas.Marvel.datos.findIndex(
+    (villano) => villano.Nombre.toLowerCase() === nombre.toLowerCase()
+  );
+
+  if (index === -1) {
+    return res.status(404).json({ error: "Villano no encontrado" });
+  }
+
+  data.base_de_datos.tablas.Marvel.datos[index] = {
+    ...data.base_de_datos.tablas.Marvel.datos[index],
+    ...req.body,
+  };
+
+  fs.writeFileSync("villanos_db.json", JSON.stringify(data, null, 2));
+  res.json({
+    message: `Villano ${nombre} actualizado con éxito`,
+    villano: data.base_de_datos.tablas.Marvel.datos[index],
+  });
+});
+
+// Actualizar un Villano de DC
+app.put("/api/villanos/dc/:nombre", (req, res) => {
+  const data = cargarDatos();
+  const nombre = req.params.nombre;
+  const index = data.base_de_datos.tablas.DC.datos.findIndex(
+    (villano) => villano.Nombre.toLowerCase() === nombre.toLowerCase()
+  );
+
+  if (index === -1) {
+    return res.status(404).json({ error: "Villano no encontrado" });
+  }
+
+  data.base_de_datos.tablas.DC.datos[index] = {
+    ...data.base_de_datos.tablas.DC.datos[index],
+    ...req.body,
+  };
+
+  fs.writeFileSync("villanos_db.json", JSON.stringify(data, null, 2));
+  res.json({
+    message: `Villano ${nombre} actualizado con éxito`,
+    villano: data.base_de_datos.tablas.DC.datos[index],
+  });
+});
+
+
 
   // Eliminar a un villano de Marvel por nombre
 app.delete("/api/villanos/marvel/:nombre", (req, res) => {
