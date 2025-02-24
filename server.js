@@ -62,6 +62,38 @@ app.get("/api/villanos/dc", (req, res) => {
   });
 
 
+// Villano de Marvel por nombre de nemesis en especifico
+app.get("/api/villanos/marvel/nemesis/:nemesis", (req, res) => {
+  const data = cargarDatos();
+  const nemesisParametro = req.params.nemesis.toLowerCase();
+  const villanosFiltrados = data.base_de_datos.tablas.Marvel.datos.filter(
+    (villano) => villano.Nemesis.toLowerCase().includes(nemesisParametro)
+  );
+
+  if (villanosFiltrados.length === 0) {
+    return res.status(404).json({ error: "No se encontraron villanos con ese nemesis" });
+  }
+
+  res.json(villanosFiltrados);
+});
+
+// Villano de DC por nombre de nemesis en especifico
+app.get("/api/villanos/dc/nemesis/:nemesis", (req, res) => {
+  const data = cargarDatos();
+  const nemesisParametro = req.params.nemesis.toLowerCase();
+  const villanosFiltrados = data.base_de_datos.tablas.DC.datos.filter(
+    (villano) => villano.Nemesis.toLowerCase().includes(nemesisParametro)
+  );
+
+  if (villanosFiltrados.length === 0) {
+    return res.status(404).json({ error: "No se encontraron villanos con ese nemesis" });
+  }
+
+  res.json(villanosFiltrados);
+});
+
+
+
 // Agregar un Villano a la tabla de Marvel
 app.post("/api/villanos/marvel", (req, res) => {
   const nuevoVillano = req.body; 
