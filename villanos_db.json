@@ -82,18 +82,75 @@
           ]
         },
         "DC": {
-          "nombre": "Villanos de DC",
-          "columnas": [
-            "Nombre",
-            "Nemesis",
-            "Fecha de Creación",
-            "Poderes",
-            "Apariencia",
-            "Identidad Secreta",
-            "Origen"
-          ],
-          "datos": []
+            "nombre": "Villanos de DC",
+            "marca": "DC Comics",
+            "propósito": "Guardado de información de villanos de DC para su uso en API",
+            "columnas": [
+              "Nombre",
+              "Nemesis",
+              "Fecha de Creación",
+              "Poderes",
+              "Apariencia",
+              "Identidad Secreta",
+              "Origen"
+            ],
+            "datos": [
+              {
+                "Nombre": "Joker",
+                "Nemesis": "Batman",
+                "Fecha_de_Creacion": "1940",
+                "Poderes": "Genio criminal, manipulación, impredecible",
+                "Apariencia": "Piel blanca, cabello verde, traje púrpura",
+                "Identidad_Secreta": "Desconocida",
+                "Origen": "Gotham City"
+              },
+              {
+                "Nombre": "Lex Luthor",
+                "Nemesis": "Superman",
+                "Fecha_de_Creacion": "1940",
+                "Poderes": "Intelecto nivel genio, riqueza, tecnología avanzada",
+                "Apariencia": "Hombre calvo con traje formal",
+                "Identidad_Secreta": "Lex Luthor",
+                "Origen": "Metrópolis"
+              },
+              {
+                "Nombre": "Darkseid",
+                "Nemesis": "Liga de la Justicia",
+                "Fecha_de_Creacion": "1970",
+                "Poderes": "Fuerza divina, inmortalidad, Rayo Omega",
+                "Apariencia": "Piel gris, armadura oscura",
+                "Identidad_Secreta": "Uxas",
+                "Origen": "Apokolips"
+              },
+              {
+                "Nombre": "Deathstroke",
+                "Nemesis": "Teen Titans, Batman",
+                "Fecha_de_Creacion": "1980",
+                "Poderes": "Habilidades mejoradas, estratega militar",
+                "Apariencia": "Armadura negra y naranja, máscara",
+                "Identidad_Secreta": "Slade Wilson",
+                "Origen": "Humano modificado"
+              },
+              {
+                "Nombre": "Black Adam",
+                "Nemesis": "Shazam",
+                "Fecha_de_Creacion": "1945",
+                "Poderes": "Fuerza divina, velocidad, vuelo, rayos mágicos",
+                "Apariencia": "Traje negro con emblema amarillo",
+                "Identidad_Secreta": "Teth-Adam",
+                "Origen": "Egipto Antiguo"
+              },
+              {
+                "Nombre": "Reverse Flash",
+                "Nemesis": "Flash",
+                "Fecha_de_Creacion": "1963",
+                "Poderes": "Velocidad sobrehumana, manipulación temporal",
+                "Apariencia": "Traje amarillo con detalles rojos",
+                "Identidad_Secreta": "Eobard Thawne",
+                "Origen": "Siglo XXV"
+              }
+            ]
+          }
         }
       }
     }
-  }
